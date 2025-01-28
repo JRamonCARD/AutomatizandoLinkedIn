@@ -34,7 +34,8 @@ public class TC01_Logueo {
   
   
   @AfterTest
-  public void afterTest() {
+  public void closeDriver() {
+	  driver.quit();
   }
   
 

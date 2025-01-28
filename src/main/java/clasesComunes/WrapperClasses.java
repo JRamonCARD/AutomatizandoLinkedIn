@@ -15,6 +15,11 @@ public class WrapperClasses {
 		webElementUI.sendKeys(text);
 	}
 	
+	//Method to get text from a web element
+	public static String getTexto(WebElement webElementUI) {
+		return webElementUI.getText();
+	}
+	
 	
 
 }

@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import clasesComunes.WrapperClasses;
 
 public class LogueoLinkedin {
@@ -24,8 +23,11 @@ public class LogueoLinkedin {
 	@FindBy(id="password") 
 	private WebElement passwordTextBox;
 	
-	@FindBy(xpath= "//*[@id=\"organic-div\"]/form/div[3]/button") 
+	@FindBy(xpath= "//*[@id=\"organic-div\"]/form/div[4]/button") 
 	private WebElement sesionBotonAzul;
+	
+	@FindBy(id="error-for-password")
+	public WebElement mensajeDeError;
 	
 	
 	//Method to move to login page then login
@@ -40,9 +42,16 @@ public class LogueoLinkedin {
 		WrapperClasses.clickElement(passwordTextBox);
 		WrapperClasses.sendText(passwordTextBox, password);
 		
-		//WrapperClasses.sendText(passwordTextBox, password);
-		//WrapperClasses.clickElement(sesionBotonAzul);
+		WrapperClasses.clickElement(sesionBotonAzul);
 		
+	}
+	
+	
+	//Method to validate error message using bad password
+	public boolean validarMensajeError() {
+		
+		boolean errorMensaje = WrapperClasses.getTexto(mensajeDeError).contains("Dirección de email o contraseña incorrectas. Vuelve a intentarlo");
+		return errorMensaje;
 	}
 	
 	
