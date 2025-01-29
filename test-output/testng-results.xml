@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-28T18:58:54Z" name="Default suite" finished-at="2025-01-28T18:59:00Z" duration-ms="6231">
+  <suite started-at="2025-01-29T20:34:44Z" name="Default suite" finished-at="2025-01-29T20:34:51Z" duration-ms="6895">
     <groups>
     </groups>
-    <test started-at="2025-01-28T18:58:54Z" name="Default test" finished-at="2025-01-28T18:59:00Z" duration-ms="6231">
-      <class name="logueoTesting.TC02_Logueo_Mal_Password">
-        <test-method is-config="true" signature="loadLinkedIn()[pri:0, instance:logueoTesting.TC02_Logueo_Mal_Password@7d0614f]" started-at="2025-01-28T12:58:54Z" name="loadLinkedIn" finished-at="2025-01-28T12:58:56Z" duration-ms="2183" status="PASS">
+    <test started-at="2025-01-29T20:34:44Z" name="Default test" finished-at="2025-01-29T20:34:51Z" duration-ms="6895">
+      <class name="logueoTesting.TC01_Logueo">
+        <test-method is-config="true" signature="loadLinkedIn()[pri:0, instance:logueoTesting.TC01_Logueo@7d0614f]" started-at="2025-01-29T14:34:44Z" name="loadLinkedIn" finished-at="2025-01-29T14:34:45Z" duration-ms="940" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadLinkedIn -->
-        <test-method signature="TC02_Invalid_Password()[pri:0, instance:logueoTesting.TC02_Logueo_Mal_Password@7d0614f]" started-at="2025-01-28T12:58:56Z" name="TC02_Invalid_Password" finished-at="2025-01-28T12:59:00Z" duration-ms="3901" status="PASS">
+        <test-method signature="TC01_Credenciales_Validas()[pri:0, instance:logueoTesting.TC01_Logueo@7d0614f]" started-at="2025-01-29T14:34:45Z" name="TC01_Credenciales_Validas" finished-at="2025-01-29T14:34:50Z" duration-ms="5794" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC02_Invalid_Password -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:logueoTesting.TC02_Logueo_Mal_Password@7d0614f]" started-at="2025-01-28T12:59:00Z" name="closeDriver" finished-at="2025-01-28T12:59:00Z" duration-ms="131" status="PASS">
+        </test-method> <!-- TC01_Credenciales_Validas -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:logueoTesting.TC01_Logueo@7d0614f]" started-at="2025-01-29T14:34:50Z" name="closeDriver" finished-at="2025-01-29T14:34:51Z" duration-ms="149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- logueoTesting.TC02_Logueo_Mal_Password -->
+      </class> <!-- logueoTesting.TC01_Logueo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
