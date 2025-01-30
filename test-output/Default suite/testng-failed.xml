@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="logueoTesting.TC01_Logueo">
+      <class name="logueoTesting.TC03_Notificaciones">
         <methods>
-          <include name="afterTest"/>
           <include name="loadLinkedIn"/>
-          <include name="TC01_Credenciales_Validas"/>
+          <include name="TC02_Pagina_Notificaciones"/>
+          <include name="closeDriver"/>
         </methods>
-      </class> <!-- logueoTesting.TC01_Logueo -->
+      </class> <!-- logueoTesting.TC03_Notificaciones -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

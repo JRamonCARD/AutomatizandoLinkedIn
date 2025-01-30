@@ -17,26 +17,27 @@ public class TC01_Logueo {
 	 //Page Objects
 	 LogueoLinkedin logueoLinkedin = new LogueoLinkedin(driver);
  
-  @BeforeTest
-  //Method to load LinkedIn to the corresponding URL
-  public void loadLinkedIn() {
-	  driver.get(VariablesGlobales.LINKEDIN_LOGINPAGE);
-	  
-  }
   
-  @Test
-  public void TC01_Credenciales_Validas() throws InterruptedException {
+	  //Method to load LinkedIn to the corresponding URL
+	  @BeforeTest
+	  public void loadLinkedIn() {
+		  driver.get(VariablesGlobales.LINKEDIN_LOGINPAGE);
+		  
+	  }
 	  
-	  logueoLinkedin.logueo(VariablesGlobales.LOGIN_USER, VariablesGlobales.LOGIN_PASSWORD);
+	  @Test
+	  public void TC01_Credenciales_Validas() throws InterruptedException {
+		  
+		  logueoLinkedin.logueo(VariablesGlobales.LOGIN_USER, VariablesGlobales.LOGIN_PASSWORD);
+		  
+	  }
+	
+	 
 	  
-  }
-
-  
-  
-  @AfterTest
-  public void closeDriver() {
-	  driver.quit();
-  }
+	  @AfterTest
+	  public void closeDriver() {
+		  driver.quit();
+	  }
   
 
 }
